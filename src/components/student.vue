@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div>  
+    <button @click="handleClick">
+      点击
+    </button>
     {{ msg }}
     {{ apiUrl }}
     {{ NODE_ENV }}
@@ -7,6 +10,7 @@
 
 </template>
 <script>
+  import router from "@/router/views";
 export default {
   name: 'student-test',
   data() {
@@ -14,6 +18,12 @@ export default {
       msg: 'Welcome to Your Vue.js App',
       apiUrl: process.env.VUE_APP_API_URL,
       NODE_ENV: process.env.NODE_ENV,
+    }
+  },
+  methods: {
+    handleClick() {
+      console.log('click')
+      router.push('/Home')
     }
   }
 }
