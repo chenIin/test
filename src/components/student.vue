@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div>  
     <button @click="handleClick">
       点击
     </button>
@@ -10,8 +10,7 @@
 
 </template>
 <script>
-import router from "@/router/views";
-
+  import router from "@/router/views";
 export default {
   name: 'student-test',
   data() {
