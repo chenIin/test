@@ -2,7 +2,7 @@ const {defineConfig} = require('@vue/cli-service')
 module.exports = defineConfig({
     transpileDependencies: true,
     lintOnSave: false,
-    publicPath: process.env.NODE_ENV === 'production' ? '/Home' : '/Home',
+    publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
     devServer: {
         port: 8088,
         proxy: {
