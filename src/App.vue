@@ -1,17 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld :msg="msg"/>
-  {{apiUrl}}
+  <div id="app">
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  },
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',
@@ -21,13 +17,17 @@ export default {
 }
 </script>
 
-<style>
+<style >
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
+
 </style>
